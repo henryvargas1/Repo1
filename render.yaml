@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: whatsapp-gpt
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: OPENAI_API_KEY
+        value: TU_API_KEY_OPENAI
+      - key: TWILIO_AUTH_TOKEN
+        value: TU_AUTH_TOKEN_TWILIO
+      - key: TWILIO_SID
+        value: TU_SID_TWILIO
